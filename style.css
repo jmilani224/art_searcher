@@ -55,6 +55,7 @@ button {
     color: #ffffff;
     background-color: rgb(255,82,82);
     font-weight: 200;
+    min-width: 10em;
 }
 
 .go-back {
