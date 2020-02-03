@@ -1,5 +1,6 @@
 
 const searchField = document.querySelector("#search-field"),
+      form = document.querySelector("form"),
       goButton = document.querySelector(".go"),
       backButton = document.querySelector('.go-back'),
       searchContainer = document.querySelector(".search-container"),
@@ -63,4 +64,9 @@ const goBack = () => {
 };
 
 goButton.addEventListener("click", getArt);
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+})
+
 backButton.addEventListener("click", goBack);
